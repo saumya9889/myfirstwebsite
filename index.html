@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hacker Shala</title>
+</head>
+
+<body>
+    <header class="navbar background">
+        <ul class="nav-list">
+            <figure class="logo"><img src="img/sam.jfif" alt="logo"></figure>
+            <nav>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </nav>
+            <div class="rightnav">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm">Search</button>
+            </div>
+        </ul>
+    </header>
+    <div class="banner-wraper">
+        <figure>
+            <img src="https://thumbs.dreamstime.com/b/hourglass-time-banner-background-format-wood-54533019.jpg"
+                alt="banner" />
+        </figure>
+
+    </div>
+    <div class="banner-card">
+        <div class="demo" id="demo">this is the demo hide</div>
+        <button onclick="Fun()">button</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sam</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>prem</td>
+                    <td>sharma</td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h2>How We Can Help you?</h2>
+    </div>
+
+    <script>
+        function Fun() {
+            const x = document.getElementById("demo");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
